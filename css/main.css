@@ -4,9 +4,13 @@ body {
   }
   
   .emoji {
+    display: flex;
+    flex-direction: column;
     border: 1px solid #222;
     border-radius: 8px;
     padding: 1rem;
+    justify-content: space-between;
+
   }
   
   .emoji h2 {
@@ -20,16 +24,20 @@ body {
     color: white;
     padding: 1rem;
     border-radius: 8px;
+    
   }
   
   .icon {
+    order: -1;
     font-size: 4rem;
+    align-self: center;
   }
 
 .emojis {
     display:grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 30rem);
     grid-template-rows: repeat(4, 1fr);
+    grid-gap: 1rem;
 
 
 }
